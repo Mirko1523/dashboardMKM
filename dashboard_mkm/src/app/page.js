@@ -9,7 +9,7 @@ function HomePage() {
     <div>
       <div>
         <NavBar />
-        <Footer />
+
       </div>
     </div>
 

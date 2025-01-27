@@ -1,31 +1,100 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 function NavBar() {
+    const router = useRouter();
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const handleNavigation = (route) => {
+        router.push("/" + route);
+        setMenuOpen(false);
+    };
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
+
     return (
         <div>
-            <header className="lg:px-16 px-4 bg-white flex flex-wrap items-center py-4 shadow-md">
+            <header className="lg:px-10 px-4 bg-white flex flex-wrap items-center py-2 shadow-md relative">
                 <div className="flex-1 flex justify-between items-center">
-                    <a href="#" className="text-xl">Company</a>
+                    <div className="flex items-center space-x-2">
+                        <Image
+                            src="/logoNav.png"
+                            alt="MKM Agency Logo"
+                            width={80}
+                            height={40}
+                            onClick={() => handleNavigation('')}
+                            className="cursor-pointer"
+                        />
+                        <a onClick={() => handleNavigation('')} className="text-xl font-bold cursor-pointer">
+                            MKM Agency
+                        </a>
+                    </div>
+
+
+                    <div className="hidden md:flex items-center space-x-8">
+                        <a
+                            className="text-blue-950 font-bold cursor-pointer hover:bg-blue-950 hover:text-white px-4 py-2 rounded-lg"
+                            onClick={() => handleNavigation('aboutUs')}
+                        >
+                            About us
+                        </a>
+                        <a
+                            className="text-blue-950 font-bold cursor-pointer hover:bg-blue-950 hover:text-white px-4 py-2 rounded-lg"
+                            onClick={() => handleNavigation('contact')}
+                        >
+                            Contact Us
+                        </a>
+                    </div>
+
+
+                    <label
+                        htmlFor="menu-toggle"
+                        className="pointer-cursor md:hidden block"
+                        onClick={toggleMenu}
+                    >
+                        <svg
+                            className="fill-current text-gray-900"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                        >
+                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                        </svg>
+                    </label>
                 </div>
 
-                <label htmlFor="menu-toggle" className="pointer-cursor md:hidden block">
-                    <svg className="fill-current text-gray-900"
-                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-                    </svg>
-                </label>
-                <input className="hidden" type="checkbox" id="menu-toggle" />
 
-                <div className="hidden md:flex md:items-center md:w-auto w-full" id="menu">
+                <div
+                    className={`${menuOpen ? "max-h-screen py-4" : "max-h-0"}
+  overflow-hidden transition-all duration-300 ease-in-out 
+  absolute top-full right-0 px-2 mt-0.5 bg-white shadow-md z-10 md:hidden`}
+
+
+                >
                     <nav>
-                        <ul className="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
-                            <li><a className="md:p-4 py-3 px-0 block" href="#">AboutUs</a></li>
-                            <li><a className="md:p-4 py-3 px-0 block" href="#">Treatments</a></li>
-                            <li><a className="md:p-4 py-3 px-0 block" href="#">Blog</a></li>
-                            <li><a className="md:p-4 py-3 px-0 block md:mb-0 mb-2" href="#">Contact Us</a></li>
+                        <ul className="flex flex-col items-center text-base text-gray-700">
+                            <li>
+                                <a
+                                    className="text-blue-950 font-bold p-4  w-full text-center cursor-pointer hover:bg-blue-950 hover:text-white"
+                                    onClick={() => handleNavigation('aboutUs')}
+                                >
+                                    About us
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    className="text-blue-950 font-bold p-4 w-full text-center cursor-pointer hover:bg-blue-950 hover:text-white "
+                                    onClick={() => handleNavigation('contact')}
+                                >
+                                    Contact Us
+                                </a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
