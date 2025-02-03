@@ -30,7 +30,7 @@ function NavBar() {
                             onClick={() => handleNavigation('')}
                             className="cursor-pointer"
                         />
-                        <a onClick={() => handleNavigation('')} className="text-xl font-bold cursor-pointer">
+                        <a onClick={() => handleNavigation('')} className=" text-blue-950 text-xl font-bold cursor-pointer">
                             MKM Agency
                         </a>
                     </div>
@@ -58,11 +58,12 @@ function NavBar() {
                         onClick={toggleMenu}
                     >
                         <svg
-                            className="fill-current text-gray-900"
+                            className="fill-current text-gray-900 cursor-pointer"
                             xmlns="http://www.w3.org/2000/svg"
                             width="20"
                             height="20"
                             viewBox="0 0 20 20"
+
                         >
                             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
                         </svg>
