@@ -138,7 +138,7 @@ function SendForm() {
 
                 {success === true && (
                     <p className="text-green-600 text-center mt-2">
-                        ¡Mensaje enviado correctamente!
+                        ¡Mensaje enviado correctamente! Te responderemos lo antes posible!
                     </p>
                 )}
                 {success === false && (

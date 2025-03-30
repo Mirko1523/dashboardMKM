@@ -41,13 +41,13 @@ function NavBar() {
                             className="text-blue-950 font-bold cursor-pointer hover:bg-blue-950 hover:text-white px-4 py-2 rounded-lg"
                             onClick={() => handleNavigation('aboutUs')}
                         >
-                            About us
+                            Sobre nosotros
                         </a>
                         <a
                             className="text-blue-950 font-bold cursor-pointer hover:bg-blue-950 hover:text-white px-4 py-2 rounded-lg"
                             onClick={() => handleNavigation('contact')}
                         >
-                            Contact Us
+                            Contactanos
                         </a>
                     </div>
 
