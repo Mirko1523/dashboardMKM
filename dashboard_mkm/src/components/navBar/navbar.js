@@ -39,6 +39,12 @@ function NavBar() {
                     <div className="hidden md:flex items-center space-x-8">
                         <a
                             className="text-blue-950 font-bold cursor-pointer hover:bg-blue-950 hover:text-white px-4 py-2 rounded-lg"
+                            onClick={() => handleNavigation('projects')}
+                        >
+                            Trabajos hechos
+                        </a>
+                        <a
+                            className="text-blue-950 font-bold cursor-pointer hover:bg-blue-950 hover:text-white px-4 py-2 rounded-lg"
                             onClick={() => handleNavigation('aboutUs')}
                         >
                             Sobre nosotros
@@ -94,6 +100,14 @@ function NavBar() {
                                     onClick={() => handleNavigation('contact')}
                                 >
                                     Contact Us
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    className="text-blue-950 font-bold p-4 w-full text-center cursor-pointer hover:bg-blue-950 hover:text-white "
+                                    onClick={() => handleNavigation('contact')}
+                                >
+                                    Trabajos hechos
                                 </a>
                             </li>
                         </ul>
