@@ -58,6 +58,31 @@ function ContactUs() {
               Programamos a mano con lenguajes específicos para que tu proyecto pueda incluir cualquier funcionalidad requerida.
             </p>
           </div>
+
+          <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition">
+            <h1 className="text-2xl font-bold text-blue-950 mb-4 text-center">
+              Realizamos prototipos de tu idea 100% gratis
+            </h1>
+            <p className="text-gray-700 text-center">
+              Creamos segun tus ideas un diseño de tu futura pagina web o sistema, para que puedas ver como quedara tu proyecto final.
+            </p>
+          </div>
+          <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition">
+            <h1 className="text-2xl font-bold text-blue-950 mb-4 text-center">
+              Alojamiento y dominio totalmente gratis
+            </h1>
+            <p className="text-gray-700 text-center">
+              Una vez cerrado el trato, te ofrecemos entre 2 a 4 de alojamiento y dominio gratis para que puedas empezar a mostrar tu proyecto al internet.
+            </p>
+          </div>
+          <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition">
+            <h1 className="text-2xl font-bold text-blue-950 mb-4 text-center">
+              Amamos todas las ideas que nos proponen
+            </h1>
+            <p className="text-gray-700 text-center">
+              Nos encanta escuchar las ideas de nuestros clientes, por eso ofrecemos una primera consulta gratuita para escuchar tus ideas y ayudarte a hacerlas realidad.
+            </p>
+          </div>
         </div>
       </div>
     </div>

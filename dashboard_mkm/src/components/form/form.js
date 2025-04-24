@@ -47,13 +47,13 @@ function SendForm() {
 
     return (
         <div className="max-w-lg mx-auto mt-10 p-5">
-            <h2 className="text-2xl font-bold text-gray-800 text-center mb-5">
-                Contact Us
+            <h2 className="text-2xl font-bold text-gray-900 text-center mb-5">
+                Contactanos para que construyamos juntos tu idea!
             </h2>
             <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
                     <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900">
-                        Your Email
+                        Tu email
                     </label>
                     <div className="relative">
                         <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -74,7 +74,7 @@ function SendForm() {
                             name="email"
                             value={formData.email}
                             onChange={handleChange}
-                            placeholder="your email..."
+                            placeholder="tu email..."
                             required
                             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full pl-10 p-2.5"
                         />
@@ -82,7 +82,7 @@ function SendForm() {
                 </div>
                 <div>
                     <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900">
-                        Your Name
+                        Tu nombre
                     </label>
                     <div className="relative">
                         <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -103,7 +103,7 @@ function SendForm() {
                             name="name"
                             value={formData.name}
                             onChange={handleChange}
-                            placeholder="your name..."
+                            placeholder="tu nombre..."
                             required
                             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full pl-10 p-2.5"
                         />
