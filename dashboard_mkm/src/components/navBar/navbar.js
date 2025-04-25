@@ -85,7 +85,7 @@ function NavBar() {
 
                 >
                     <nav>
-                        <ul className="flex flex-col items-center text-base text-gray-700">
+                        <ul className="flex flex-col items-center text-base text-gray-700 space-y-4">
                             <li>
                                 <a
                                     className="text-blue-950 font-bold p-4  w-full text-center cursor-pointer hover:bg-blue-950 hover:text-white"
@@ -104,8 +104,8 @@ function NavBar() {
                             </li>
                             <li>
                                 <a
-                                    className="text-blue-950 font-bold p-4 w-full text-center cursor-pointer hover:bg-blue-950 hover:text-white "
-                                    onClick={() => handleNavigation('contact')}
+                                    className="text-blue-950 font-bold p-4 mt-4 w-full text-center cursor-pointer hover:bg-blue-950 hover:text-white "
+                                    onClick={() => handleNavigation('projects')}
                                 >
                                     Trabajos hechos
                                 </a>
