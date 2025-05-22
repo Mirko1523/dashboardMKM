@@ -8,12 +8,16 @@ import Image from "next/image"
 export default function Projects() {
     const proyectos = [
         { name: "Tienda Reina", url: "https://tiendareina.vercel.app/", preview: "/previews/reina.png" },
-        { name: "Andamios Gonpaz", url: "https://andamiosgonpaz.vercel.app/", preview: "/previews/andamiosgonpaz.png" },
         { name: "Transportes JYJ", url: "https://transportesjyj.vercel.app/", preview: "/previews/transportesjyj.png" },
-        { name: "Hernan Pinturas S.M.A", url: "https://hernanpinturassma.vercel.app/", preview: "/previews/hernanpinturas.png" },
+        { name: "Clahé Eventos", url: "https://claheeventos.vercel.app/", preview: "/previews/clahe.png" },
         { name: "Eventos para Todos", url: "https://eventosparatodos.vercel.app/", preview: "/previews/eventosparatodos.png" },
         { name: "Quinta los Buhos", url: "https://quintalosbuhos.vercel.app/", preview: "/previews/quintalosbuhos.png" },
+        { name: "Distribuidora Sudamerica", url: "https://distribuidorasudamerica.vercel.app/", preview: "/previews/sudamerica.png" },
+        { name: "ConstruMX", url: "https://construmx.vercel.app/", preview: "/previews/construMX.png" },
+        { name: "TYA Exclusivos", url: "https://tyaexclusivos.vercel.app/", preview: "/previews/tyaexclusivos.png" },
+        { name: "Ferreteria Pasteur Luz", url: " https://pasteurluz.vercel.app/", preview: "/previews/PasteurLuz.png" },
     ]
+
 
     return (
         <div className="min-h-screen bg-neutral-100">
