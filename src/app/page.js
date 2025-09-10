@@ -26,7 +26,7 @@ function ContactUs() {
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1]">
                   Creamos experiencias<br />
                   <span className="text-transparent bg-gradient-to-r from-blue-400 via-blue-600 to-blue-800 bg-clip-text italic">
-                    digitales unicas
+                    digitales unicas!
                   </span>
                 </h1>
 
