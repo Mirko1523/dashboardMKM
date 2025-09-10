@@ -23,44 +23,50 @@ function NavBar() {
                 <div className="flex-1 flex justify-between items-center">
                     <div className="flex items-center space-x-2">
                         <Image
-                            src="/logoNav.png"
+                            src="/logo.png"
                             alt="MKM Agency Logo"
-                            width={80}
+                            width={90}
                             height={40}
                             onClick={() => handleNavigation('')}
                             className="cursor-pointer"
                         />
-                        <a onClick={() => handleNavigation('')} className=" text-blue-950 text-xl font-bold cursor-pointer">
+                        <a onClick={() => handleNavigation('')} className="text-blue-950 text-xl font-bold leading-tight">
                             MKM Agency
                         </a>
                     </div>
 
 
-                    <div className="hidden md:flex items-center space-x-8">
+                    <div className="hidden min-[1054px]:flex items-center space-x-8">
                         <a
-                            className="text-blue-950 font-bold cursor-pointer hover:bg-blue-950 hover:text-white px-4 py-2 rounded-lg"
-                            onClick={() => handleNavigation('projects')}
+                            className="text-blue-950 font-bold cursor-pointer hover:bg-blue-950 hover:text-white px-5 py-3 rounded-xl"
+                            onClick={() => handleNavigation('/')}
                         >
-                            Trabajos hechos
+                            Home
                         </a>
                         <a
-                            className="text-blue-950 font-bold cursor-pointer hover:bg-blue-950 hover:text-white px-4 py-2 rounded-lg"
+                            className="text-blue-950 font-bold cursor-pointer hover:bg-blue-950 hover:text-white px-5 py-3 rounded-xl"
+                            onClick={() => handleNavigation('projects')}
+                        >
+                            Nuestros trabajos
+                        </a>
+                        {/* <a
+                            className="text-blue-950 font-bold cursor-pointer hover:bg-blue-950 hover:text-white px-5 py-3 rounded-xl"
                             onClick={() => handleNavigation('aboutUs')}
                         >
                             Sobre nosotros
-                        </a>
+                        </a> */}
                         <a
-                            className="text-blue-950 font-bold cursor-pointer hover:bg-blue-950 hover:text-white px-4 py-2 rounded-lg"
+                            className="bg-blue-950 text-white font-bold cursor-pointer hover:bg-blue-900 px-7 py-3 rounded-xl hover:scale-110 transition-transform"
                             onClick={() => handleNavigation('contact')}
                         >
-                            Contactanos
+                            Contactános
                         </a>
                     </div>
 
 
                     <label
                         htmlFor="menu-toggle"
-                        className="pointer-cursor md:hidden block"
+                        className="pointer-cursor min-[1054px]:hidden block"
                         onClick={toggleMenu}
                     >
                         <svg
@@ -89,17 +95,9 @@ function NavBar() {
                             <li>
                                 <a
                                     className="text-blue-950 font-bold p-4  w-full text-center cursor-pointer hover:bg-blue-950 hover:text-white"
-                                    onClick={() => handleNavigation('aboutUs')}
+                                    onClick={() => handleNavigation('/')}
                                 >
-                                    About us
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    className="text-blue-950 font-bold p-4 w-full text-center cursor-pointer hover:bg-blue-950 hover:text-white "
-                                    onClick={() => handleNavigation('contact')}
-                                >
-                                    Contact Us
+                                    Home
                                 </a>
                             </li>
                             <li>
@@ -107,7 +105,23 @@ function NavBar() {
                                     className="text-blue-950 font-bold p-4 mt-4 w-full text-center cursor-pointer hover:bg-blue-950 hover:text-white "
                                     onClick={() => handleNavigation('projects')}
                                 >
-                                    Trabajos hechos
+                                    Proyectos
+                                </a>
+                            </li>
+                            {/* <li>
+                                <a
+                                    className="text-blue-950 font-bold p-4  w-full text-center cursor-pointer hover:bg-blue-950 hover:text-white"
+                                    onClick={() => handleNavigation('aboutUs')}
+                                >
+                                    Sobre nosotros
+                                </a>
+                            </li> */}
+                            <li>
+                                <a
+                                    className="bg-blue-950 text-white font-bold cursor-pointer hover:bg-blue-900 px-10 py-2 rounded-xl hover:scale-110 transition-transform"
+                                    onClick={() => handleNavigation('contact')}
+                                >
+                                    Contactános
                                 </a>
                             </li>
                         </ul>

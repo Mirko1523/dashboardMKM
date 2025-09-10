@@ -8,7 +8,7 @@ import Image from "next/image"
 export default function Projects() {
     const proyectos = [
         { name: "SIIM Ingenieria", url: "https://siimingenieria.com/", preview: "/previews/siim.png" },
-        { name: "FAA Agency", url: "https://faascalablesp.netlify.app/", preview: "/previews/faa.png" },
+        { name: "FAA Agency", url: "https://faascalablesp.netlify.app/", preview: "/previews/bgFAA.png" },
         { name: "Clahé Eventos", url: "https://claheeventos.vercel.app/", preview: "/previews/clahe.png" },
         { name: "Quinta los Buhos", url: "https://quintalosbuhos.vercel.app/", preview: "/previews/quintalosbuhos.png" },
         { name: "Distribuidora Sudamerica", url: "https://distribuidorasudamerica.vercel.app/", preview: "/previews/sudamerica.png" },
