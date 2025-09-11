@@ -86,16 +86,23 @@ function SendForm() {
                     </label>
                     <div className="relative">
                         <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                            <svg
-                                className="w-4 h-4 text-gray-500"
-                                aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="currentColor"
-                                viewBox="0 0 20 16"
-                            >
-                                <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z" />
-                                <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z" />
-                            </svg>
+                      <svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 24 24"
+  width="24"
+  height="24"
+  fill="none"
+  stroke="#6b7280"
+  strokeWidth="2"
+  strokeLinecap="round"
+  strokeLinejoin="round"
+  role="img"
+  aria-label="Usuario"
+>
+  <title>Usuario</title>
+  <circle cx="12" cy="7" r="4"></circle>
+  <path d="M4 21V17C4 15.8954 4.8954 15 6 15H18C19.1046 15 20 15.8954 20 17V21"></path>
+</svg>
                         </div>
                         <input
                             type="text"
