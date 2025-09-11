@@ -53,7 +53,7 @@ function SendForm() {
             <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
                     <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900">
-                        Tu email
+                        Tu email*
                     </label>
                     <div className="relative">
                         <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -82,7 +82,7 @@ function SendForm() {
                 </div>
                 <div>
                     <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900">
-                        Tu nombre
+                        Nombre o Empresa*
                     </label>
                     <div className="relative">
                         <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -103,7 +103,7 @@ function SendForm() {
                             name="name"
                             value={formData.name}
                             onChange={handleChange}
-                            placeholder="tu nombre..."
+                            placeholder="Tu nombre o el de la empresa..."
                             required
                             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full pl-10 p-2.5"
                         />
@@ -111,7 +111,7 @@ function SendForm() {
                 </div>
                 <div>
                     <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900">
-                        Your Message
+                        Mensaje*
                     </label>
                     <div className="relative">
                         <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -119,11 +119,12 @@ function SendForm() {
                         <textarea
                             id="message"
                             name="message"
+                            placeholder="Cuentanos tu idea de proyecto..."
                             value={formData.message}
                             onChange={handleChange}
                             required
                             rows="2"
-                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full pl-5 p-2.5"
+                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full pl-3 p-2.5 resize-none h-40"
                         />
                     </div>
                 </div>

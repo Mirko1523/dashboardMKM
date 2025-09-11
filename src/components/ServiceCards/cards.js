@@ -19,7 +19,7 @@ const services = [
         id: 3,
         title: "Estrategia Digital",
         description:
-            "Diseñamos una estrategia SEO y de marketing digital personalizada para mejorar tu posicionamiento y aumentar la visibilidad de tu marca en línea.",
+            "Diseñamos una estrategia SEO y de marketing digital personalizada para mejorar tu posicionamiento y aumentar la visibilidad de tu marca en internet.",
         icon: "chart",
     },
     {
